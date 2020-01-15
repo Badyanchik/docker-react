@@ -6,4 +6,4 @@ before_install:
   - docker build -t badyanchik/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run badyanchik/docker-react npm run test -- --coverage
+  - docker run badyanchik/docker-react npm run test -- --watchAll=false
